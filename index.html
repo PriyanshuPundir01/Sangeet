@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SANGEET</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap" rel="stylesheet" />
+  <link href="https://db.onlinewebfonts.com/c/8c248c2863a9f324af358c003066ac26?family=Dogjaw+W01+Regular"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <img src="./LOGO/LOGO.png" class="logo" alt="SM Logo" />
+      <nav class="nav">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="./music.html">Music</a></li>
+          <li><a href="./video.html">Videos</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="title">
+        <h1 class="centertitle">SANGEET</h1>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="latest-release">
+      <h2 class="release-title">Latest Release</h2>
+      <h3 class="release-date">March, 2026</h3>
+
+      <div class="shakti">
+        <iframe style="border-radius:12px"
+          src="https://open.spotify.com/embed/playlist/1lvlW9VD9FEi2vKVzKPBTP?utm_source=generator" width="100%"
+          height="450" frameBorder="0" allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+        </iframe>
+
+
+        <p class="about_shakti">
+          Sangeet: Your Melodious Companion is a simple, easy-to-use music and video web app that brings the soulful
+          sounds of Garhwali music right to you.
+          From traditional folk songs that echo the spirit of the hills to fresh new beats that keep you moving, Sangeet
+          celebrates the music of Uttarakhand.
+          Enjoy handpicked playlists, regional videos, and a beautiful design that makes listening fun and effortless.
+          Whether you're at home or far away, Sangeet helps you stay connected to your culture through music you love.
+
+        </p>
+      </div>
+    </section>
+
+    <section class="videos">
+      <h2 class="video-section-title">Popular Releases</h2>
+      <div class="video-container">
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/8m-D-WTslLE?si=3Ny1zWkvdbax_tAA" title="video player"
+            frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/NH2U9rR-WeI?si=xpzLvJnHwARVhCa1" title="Video Player"
+            frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/AoCjDPBTLpE?si=OF-65wpXiMQLLFCL" title="Video Player"
+            frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/oCW36G_9YYA?si=5a1mqsH1p5TXqLUH" title="Video Player"
+            frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/RIoDWD2M-D4?si=HnFT_RdaVZSN-alp" title="Video Player"
+            frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <h2 class="newsletter-title">Stay Up to Date</h2>
+      <p class="newsletter-description">
+        Subscribe to our newsletter to get the latest updates on Garhwali songs and more!
+      </p>
+      <form class="newsletter-form">
+        <input type="email" class="newsletter-input" placeholder="Enter your email" required />
+        <button type="submit" class="newsletter-button">Subscribe</button>
+      </form>
+    </section>
+
+    <script>
+      document.querySelector('.newsletter-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const email = document.querySelector('.newsletter-input').value;
+
+        console.log("Email submitted:", email);
+
+
+        window.location.href = "https://youtube.com/@priyanshu.pundir_01?si=pWtkLLg1miQbB_4b";
+
+      });
+    </script>
+
+  </main>
+
+  <footer>
+    <p>
+      © 2026 Sangeet - "Your Melodious Companion" |
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms & Conditions</a>
+    </p>
+  </footer>
+</body>
+
+</html>

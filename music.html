@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music - Sangeet</title>
+  <link rel="stylesheet" href="music.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&family=Montserrat:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://db.onlinewebfonts.com/c/8c248c2863a9f324af358c003066ac26?family=Dogjaw+W01+Regular"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <section class="start">
+      <div class="container">
+        <img src="./LOGO/LOGO 2.png" class="logo" alt="SMlogo" />
+        <nav class="nav">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#" class="active">Music</a></li>
+            <li><a href="./video.html">Videos</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <li class="search-group">
+              <span class="material-icons search-icon" onclick="toggleSearch()" title="Search Songs">search</span>
+              <div class="search-bar" id="searchBar">
+                <input type="text" id="searchInput" placeholder="Search songs..." onkeyup="filterSongsLive()">
+                <button type="button" onclick="performSearch()">Search</button>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <div class="music-header-title">
+      <h2>FEATURED TRACKS</h2>
+
+    </div>
+
+    <section class="grid-container" id="songsGrid">
+
+      <div class="grid-item" data-src="./songs/Aejadi Bhagyani.mp3" data-title="AEJADI BHAGYANI"
+        data-cover="./covers/1750809799905.jpg">
+        <div class="album-card">
+          <img src="./covers/1750809799905.jpg" alt="AEJADI BHAGYANI" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">AEJADI BHAGYANI</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Bol Heera.mp3" data-title="BOL HEERA"
+        data-cover="./covers/1750809799879.jpg">
+        <div class="album-card">
+          <img src="./covers/1750809799879.jpg" alt="BOL HEERA" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">BOL HEERA</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Chaitwali.mp3" data-title="CHAITWALI"
+        data-cover="./covers/1750809799859.jpg">
+        <div class="album-card">
+          <img src="./covers/1750809799859.jpg" alt="CHAITWALI" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">CHAITWALI</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Chal Kapat.mp3" data-title="CHAL KAPAT"
+        data-cover="./covers/1750809799835.webp">
+        <div class="album-card">
+          <img src="./covers/1750809799835.webp" alt="CHAL KAPAT" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">CHAL KAPAT</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Chali Bhai Motar Chali.mp3" data-title="CHALI BHAI MOTOR CHALI"
+        data-cover="./covers/1750809799816.jpg">
+        <div class="album-card">
+          <img src="./covers/1750809799816.jpg" alt="CHALI BHAI MOTOR CHALI" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">CHALI BHAI MOTOR CHALI</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Challpatti (Garhwali Dj).mp3" data-title="CHALLPATI"
+        data-cover="./covers/1750809799795.jpg">
+        <div class="album-card">
+          <img src="./covers/1750809799795.jpg" alt="CHALLPATI" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">CHALLPATI</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Dhan Singh Ki Gaadi.mp3" data-title="DHAN SINGH KI GADI"
+        data-cover="./covers/1750809799768.jpg">
+        <div class="album-card">
+          <img src="./covers/1750809799768.jpg" alt="DHAN SINGH KI GADI" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">DHAN SINGH KI GADI</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Dhebra Harchi Geni.mp3" data-title="DHEBRA HARCHI GENI"
+        data-cover="./covers/Cover of Dhebra Harchi Geni by Narendra Singh Negi.jpg">
+        <div class="album-card">
+          <img src="./covers/Cover of Dhebra Harchi Geni by Narendra Singh Negi.jpg" alt="DHEBRA HARCHI GENI"
+            loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">DHEBRA HARCHI GENI</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Durga Bhawani (Jaagar).mp3" data-title="DURGA BHAWANI"
+        data-cover="./covers/Cover of Durga Bhawani (Jaagar) by Preetam Bhartwan, Meena Rana.jpg">
+        <div class="album-card">
+          <img src="./covers/Cover of Durga Bhawani (Jaagar) by Preetam Bhartwan, Meena Rana.jpg" alt="DURGA BHAWANI"
+            loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">DURGA BHAWANI</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Fwa Baga Re - Pahari.mp3" data-title="FWA BAGA RE"
+        data-cover="./covers/Cover of Fwa Baga Re - Pahari by Late.Pappu Karki, Sandeep Sanu, Kalpana Cahuhan.jpg">
+        <div class="album-card">
+          <img src="./covers/Cover of Fwa Baga Re - Pahari by Late.Pappu Karki, Sandeep Sanu, Kalpana Cahuhan.jpg"
+            alt="FWA BAGA RE" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">FWA BAGA RE</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Fyonladiya Twe Dekhik.mp3" data-title="FYONLADIYA TWE DEKHIK"
+        data-cover="./covers/1750809799720.jpg">
+        <div class="album-card">
+          <img src="./covers/1750809799720.jpg" alt="FYONLADIYA TWE DEKHIK" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">FYONLADIYA TWE DEKHIK</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Ghuguti Ghuron Laigi.mp3" data-title="GHUGUTI GHURON LAIGI"
+        data-cover="./covers/1750809799698.jpg">
+        <div class="album-card">
+          <img src="./covers/1750809799698.jpg" alt="GHUGUTI GHURON LAIGI" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">GHUGUTI GHURON LAIGI</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Ghumai de.mp3" data-title="GHUMAI DE"
+        data-cover="./covers/1750809799675.jpg">
+        <div class="album-card">
+          <img src="./covers/1750809799675.jpg" alt="GHUMAI DE" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">GHUMAI DE</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Jai Jai Bola.mp3" data-title="JAI JAI BOLA"
+        data-cover="./covers/Cover of Jai Jai Bola by Narendra Singh Negi, Anuradha Nirala, Meena Rana.jpg">
+        <div class="album-card">
+          <img src="./covers/Cover of Jai Jai Bola by Narendra Singh Negi, Anuradha Nirala, Meena Rana.jpg"
+            alt="JAI JAI BOLA" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">JAI JAI BOLA</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Jhumki.mp3" data-title="JHUMKI" data-cover="./covers/1750809799653.jpg">
+        <div class="album-card">
+          <img src="./covers/1750809799653.jpg" alt="JHUMKI" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">JHUMKI</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Khela Panso (Pandovarta).mp3" data-title="KHELA PANSO"
+        data-cover="./covers/1750809799632.jpg">
+        <div class="album-card">
+          <img src="./covers/1750809799632.jpg" alt="KHELA PANSO" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">KHELA PANSO</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Khuti Rodige.mp3" data-title="KHUTI RODIGE"
+        data-cover="./covers/1750809799607.jpg">
+        <div class="album-card">
+          <img src="./covers/1750809799607.jpg" alt="KHUTI RODIGE" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">KHUTI RODIGE</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Kui Ta Baat Holi.mp3" data-title="KUI TA BAAT HOLI"
+        data-cover="./covers/1750809799576.jpg">
+        <div class="album-card">
+          <img src="./covers/1750809799576.jpg" alt="KUI TA BAAT HOLI" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">KUI TA BAAT HOLI</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Laska Dhasko Ma Chali.mp3" data-title="LASKA DHASKO MA CHALI"
+        data-cover="./covers/1750809799547.jpg">
+        <div class="album-card">
+          <img src="./covers/1750809799547.jpg" alt="LASKA DHASKO MA CHALI" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">LASKA DHASKO MA CHALI</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Mandaan.mp3" data-title="MANDAAN"
+        data-cover="./covers/1750809799515.jpg">
+        <div class="album-card">
+          <img src="./covers/1750809799515.jpg" alt="MANDAAN" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">MANDAAN</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Mera Dandi Kanthiyon Ka Muluk.mp3"
+        data-title="MERA DANDI KANTHIYON KA MULAK"
+        data-cover="./covers/Cover of Mera Dandi Kanthiyon Ka Muluk by Narendra Singh Negi, Meena Rana.jpg">
+        <div class="album-card">
+          <img src="./covers/Cover of Mera Dandi Kanthiyon Ka Muluk by Narendra Singh Negi, Meena Rana.jpg"
+            alt="MERA DANDI KANTHIYON KA MULAK" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">MERA DANDI KANTHIYON KA MULAK</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Modern Pahadi Mashup 2.mp3" data-title="MODERN PAHADI MASHUP 2"
+        data-cover="./covers/1750809799487.jpg">
+        <div class="album-card">
+          <img src="./covers/1750809799487.jpg" alt="MODERN PAHADI MASHUP 2" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">MODERN PAHADI MASHUP 2</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Mohna Teri Murli Baji.mp3" data-title="MOHANA TERI MURLI BAJI"
+        data-cover="./covers/Cover of Mohna Teri Murli Baji by Preetam Bhartwan.jpg">
+        <div class="album-card">
+          <img src="./covers/Cover of Mohna Teri Murli Baji by Preetam Bhartwan.jpg" alt="MOHANA TERI MURLI BAJI"
+            loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">MOHANA TERI MURLI BAJI</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Na Ukaal Na Udaar.mp3" data-title="NA UKAAL NA UDHAR"
+        data-cover="./covers/Cover of Na Ukaal Na Udaar by Narendra Singh Negi, Anuradha Nirala.jpg">
+        <div class="album-card">
+          <img src="./covers/Cover of Na Ukaal Na Udaar by Narendra Singh Negi, Anuradha Nirala.jpg"
+            alt="NA UKAAL NA UDHAR" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">NA UKAAL NA UDHAR</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Nandre Tu.mp3" data-title="NANDRE TU"
+        data-cover="./covers/Cover of Nandre Tu by Rohit Chauhan.jpg">
+        <div class="album-card">
+          <img src="./covers/Cover of Nandre Tu by Rohit Chauhan.jpg" alt="NANDRE TU" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">NANDRE TU</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Nandu Mama Ki Syali.mp3" data-title="NANDU MAMA KI SYALI"
+        data-cover="./covers/1750809799452.jpg">
+        <div class="album-card">
+          <img src="./covers/1750809799452.jpg" alt="NANDU MAMA KI SYALI" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">NANDU MAMA KI SYALI</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Otuwa Belena.mp3" data-title="OTUWA BELENA"
+        data-cover="./covers/1750809799426.jpg">
+        <div class="album-card">
+          <img src="./covers/1750809799426.jpg" alt="OTUWA BELENA" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">OTUWA BELENA</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Pahadi Acappella 2 - Gothar Da Bakam Bam.mp3"
+        data-title="PAHADI ACAPPELLA 2" data-cover="./covers/1750809799399.jpg">
+        <div class="album-card">
+          <img src="./covers/1750809799399.jpg" alt="PAHADI ACAPPELLA 2" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">PAHADI ACAPPELLA 2</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Preet Kan Kadin.mp3" data-title="PREET KAN KADIN"
+        data-cover="./covers/Cover of Preet Kan Kadin by Narendra Singh Negi, Anuradha Nirala.jpg">
+        <div class="album-card">
+          <img src="./covers/Cover of Preet Kan Kadin by Narendra Singh Negi, Anuradha Nirala.jpg" alt="PREET KAN KADIN"
+            loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">PREET KAN KADIN</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Rajula.mp3" data-title="RAJULA"
+        data-cover="./covers/Cover of Rajula - Feat. Inder Arya by Inder Arya.jpg">
+        <div class="album-card">
+          <img src="./covers/Cover of Rajula - Feat. Inder Arya by Inder Arya.jpg" alt="RAJULA" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">RAJULA</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Samlonya Rumaal.mp3" data-title="SAMLONYA RUMAAL"
+        data-cover="./covers/1750809799369.jpg">
+        <div class="album-card">
+          <img src="./covers/1750809799369.jpg" alt="SAMLONYA RUMAAL" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">SAMLONYA RUMAAL</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Teri Khud Teru Khyal.mp3" data-title="TERI KHUD TERU KHYAL"
+        data-cover="./covers/Cover of Teri Khud Teru Khyal by Narendra Singh Negi, Anuradha Nirala, Mangla Rawat, Usha Negi.jpg">
+        <div class="album-card">
+          <img
+            src="./covers/Cover of Teri Khud Teru Khyal by Narendra Singh Negi, Anuradha Nirala, Mangla Rawat, Usha Negi.jpg"
+            alt="TERI KHUD TERU KHYAL" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">TERI KHUD TERU KHYAL</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Thando Re Thando.mp3" data-title="THANDO RE THANDO"
+        data-cover="./covers/1750809799357.jpg">
+        <div class="album-card">
+          <img src="./covers/1750809799357.jpg" alt="THANDO RE THANDO" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">THANDO RE THANDO</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Trijugi Narayan.mp3" data-title="TRIJUGI NARAYAN"
+        data-cover="./covers/Cover of Trijugi Narayan by Narendra Singh Negi.jpg">
+        <div class="album-card">
+          <img src="./covers/Cover of Trijugi Narayan by Narendra Singh Negi.jpg" alt="TRIJUGI NARAYAN"
+            loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">TRIJUGI NARAYAN</div>
+        </div>
+      </div>
+
+      <div class="grid-item" data-src="./songs/Veeru Bhado Ku Desh.mp3" data-title="VEERU BHADO KU DESH"
+        data-cover="./covers/Cover of Veeru Bhado Ku Desh by Narendra Singh Negi, Meena Rana.jpg">
+        <div class="album-card">
+          <img src="./covers/Cover of Veeru Bhado Ku Desh by Narendra Singh Negi, Meena Rana.jpg"
+            alt="VEERU BHADO KU DESH" loading="lazy" />
+          <div class="play-overlay">
+            <span class="material-icons play-btn-icon">play_arrow</span>
+          </div>
+          <div class="playing-indicator">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+          </div>
+          <div class="album-name">VEERU BHADO KU DESH</div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Persistent Bottom Audio Player -->
+  <div class="bottom-player" id="bottomPlayer">
+    <div class="player-content">
+
+      <!-- Track Info (Left) -->
+      <div class="player-track-info" onclick="toggleNowPlayingModal()" title="Click to expand full player">
+        <div class="track-thumb-wrapper">
+          <img id="playerThumb" src="./covers/1750809799905.jpg" alt="Track Cover" />
+          <div class="thumb-glow"></div>
+        </div>
+        <div class="track-meta">
+          <div class="track-title" id="playerTitle">Select a Track</div>
+          <div class="track-artist" id="playerArtist">Sangeet Pahadi Hits</div>
+        </div>
+      </div>
+
+      <!-- Controls & Progress (Center) -->
+      <div class="player-controls-container">
+        <div class="player-buttons">
+          <button class="btn-ctrl" id="shuffleBtn" title="Shuffle" onclick="toggleShuffle()">
+            <span class="material-icons">shuffle</span>
+          </button>
+          <button class="btn-ctrl" id="prevBtn" title="Previous Track" onclick="playPrevTrack()">
+            <span class="material-icons">skip_previous</span>
+          </button>
+          <button class="btn-ctrl btn-play" id="playPauseBtn" title="Play/Pause" onclick="togglePlayPause()">
+            <span class="material-icons" id="playIcon">play_arrow</span>
+          </button>
+          <button class="btn-ctrl" id="nextBtn" title="Next Track" onclick="playNextTrack()">
+            <span class="material-icons">skip_next</span>
+          </button>
+          <button class="btn-ctrl" id="repeatBtn" title="Repeat" onclick="toggleRepeat()">
+            <span class="material-icons">repeat</span>
+          </button>
+        </div>
+
+        <div class="player-progress-bar">
+          <span class="time-text" id="currentTimeText">0:00</span>
+          <div class="progress-slider-container">
+            <input type="range" id="seekSlider" min="0" max="100" value="0" step="0.1" oninput="onSeekChange()"
+              onchange="onSeekFinal()">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+          <span class="time-text" id="durationTimeText">0:00</span>
+        </div>
+      </div>
+
+      <!-- Right Controls (Volume & Expand) -->
+      <div class="player-extra-controls">
+        <div class="volume-container">
+          <button class="btn-ctrl" id="muteBtn" onclick="toggleMute()" title="Mute/Unmute">
+            <span class="material-icons" id="volumeIcon">volume_up</span>
+          </button>
+          <input type="range" id="volumeSlider" min="0" max="1" step="0.02" value="0.85"
+            oninput="changeVolume(this.value)">
+        </div>
+        <button class="btn-ctrl btn-expand" onclick="toggleNowPlayingModal()" title="Expand Player">
+          <span class="material-icons">open_in_full</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Fullscreen / Modal Now Playing View -->
+  <div class="now-playing-modal" id="nowPlayingModal">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-overlay">
+      <button class="modal-close-btn" onclick="toggleNowPlayingModal()" title="Close">
+        <span class="material-icons">expand_more</span>
+      </button>
+
+      <div class="modal-body">
+        <div class="modal-artwork-wrapper">
+          <img id="modalCover" src="./covers/1750809799905.jpg" alt="Album Cover" />
+          <div class="vinyl-groove"></div>
+        </div>
+
+        <div class="modal-track-info">
+          <h2 id="modalTitle">Select a Song</h2>
+          <p id="modalArtist">Sangeet Melodious Companion</p>
+        </div>
+
+        <div class="visualizer-waves" id="visualizerWaves">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <div class="modal-progress-bar">
+          <span id="modalCurrentTime">0:00</span>
+          <div class="modal-slider-box">
+            <input type="range" id="modalSeekSlider" min="0" max="100" value="0" step="0.1"
+              oninput="onModalSeekChange()" onchange="onModalSeekFinal()">
+            <div class="modal-progress-fill" id="modalProgressFill"></div>
+          </div>
+          <span id="modalDurationTime">0:00</span>
+        </div>
+
+        <div class="modal-buttons">
+          <button class="btn-ctrl" onclick="toggleShuffle()">
+            <span class="material-icons" id="modalShuffleIcon">shuffle</span>
+          </button>
+          <button class="btn-ctrl" onclick="playPrevTrack()">
+            <span class="material-icons">skip_previous</span>
+          </button>
+          <button class="btn-ctrl btn-play-large" onclick="togglePlayPause()">
+            <span class="material-icons" id="modalPlayIcon">play_arrow</span>
+          </button>
+          <button class="btn-ctrl" onclick="playNextTrack()">
+            <span class="material-icons">skip_next</span>
+          </button>
+          <button class="btn-ctrl" onclick="toggleRepeat()">
+            <span class="material-icons" id="modalRepeatIcon">repeat</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden Audio Engine -->
+  <audio id="audioEngine" preload="metadata"></audio>
+
+  <footer>
+    <p>© 2025 Sangeet - "Your Melodious Companion" | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+    </p>
+  </footer>
+
+  <script>
+    // --- State & Playlist Setup ---
+    const gridItems = Array.from(document.querySelectorAll('.grid-item'));
+    const playlist = gridItems.map((item, index) => ({
+      index: index,
+      element: item,
+      title: item.getAttribute('data-title'),
+      src: item.getAttribute('data-src'),
+      cover: item.getAttribute('data-cover')
+    }));
+
+    let currentTrackIndex = -1;
+    let isPlaying = false;
+    let isShuffle = false;
+    let isRepeat = false;
+    let previousVolume = 0.85;
+    let isSeeking = false;
+
+    const audio = document.getElementById('audioEngine');
+    const bottomPlayer = document.getElementById('bottomPlayer');
+    const playerThumb = document.getElementById('playerThumb');
+    const playerTitle = document.getElementById('playerTitle');
+    const playerArtist = document.getElementById('playerArtist');
+    const playIcon = document.getElementById('playIcon');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const seekSlider = document.getElementById('seekSlider');
+    const progressFill = document.getElementById('progressFill');
+    const currentTimeText = document.getElementById('currentTimeText');
+    const durationTimeText = document.getElementById('durationTimeText');
+    const volumeSlider = document.getElementById('volumeSlider');
+    const volumeIcon = document.getElementById('volumeIcon');
+    const shuffleBtn = document.getElementById('shuffleBtn');
+    const repeatBtn = document.getElementById('repeatBtn');
+
+    // Modal elements
+    const nowPlayingModal = document.getElementById('nowPlayingModal');
+    const modalCover = document.getElementById('modalCover');
+    const modalBackdrop = document.getElementById('modalBackdrop');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalArtist = document.getElementById('modalArtist');
+    const modalPlayIcon = document.getElementById('modalPlayIcon');
+    const modalSeekSlider = document.getElementById('modalSeekSlider');
+    const modalProgressFill = document.getElementById('modalProgressFill');
+    const modalCurrentTime = document.getElementById('modalCurrentTime');
+    const modalDurationTime = document.getElementById('modalDurationTime');
+    const visualizerWaves = document.getElementById('visualizerWaves');
+
+    // Set initial volume
+    audio.volume = 0.85;
+
+    // Attach click listeners to cards
+    playlist.forEach((song, idx) => {
+      song.element.addEventListener('click', () => {
+        loadAndPlayTrack(idx);
+      });
+    });
+
+    function loadAndPlayTrack(index) {
+      if (index < 0 || index >= playlist.length) return;
+      currentTrackIndex = index;
+      const song = playlist[index];
+
+      audio.src = song.src;
+      playerTitle.textContent = song.title;
+      playerArtist.textContent = "Sangeet Pahadi Hits";
+      playerThumb.src = song.cover;
+
+      // Update Modal
+      modalTitle.textContent = song.title;
+      modalArtist.textContent = "Sangeet Pahadi Classics";
+      modalCover.src = song.cover;
+      modalBackdrop.style.backgroundImage = `url('${song.cover}')`;
+
+      // Update active grid item styling
+      gridItems.forEach((item, i) => {
+        if (i === index) {
+          item.classList.add('playing');
+        } else {
+          item.classList.remove('playing');
+        }
+      });
+
+      // Show bottom player
+      bottomPlayer.classList.add('visible');
+
+      audio.play().then(() => {
+        isPlaying = true;
+        updatePlayStateUI();
+      }).catch(err => {
+        console.warn("Autoplay notice:", err);
+      });
+    }
+
+    function togglePlayPause() {
+      if (currentTrackIndex === -1) {
+        if (playlist.length > 0) loadAndPlayTrack(0);
+        return;
+      }
+      if (audio.paused) {
+        audio.play();
+        isPlaying = true;
+      } else {
+        audio.pause();
+        isPlaying = false;
+      }
+      updatePlayStateUI();
+    }
+
+    function updatePlayStateUI() {
+      if (!audio.paused) {
+        playIcon.textContent = 'pause';
+        modalPlayIcon.textContent = 'pause';
+        playerThumb.classList.add('rotating');
+        modalCover.classList.add('rotating');
+        visualizerWaves.classList.add('active');
+        if (currentTrackIndex !== -1) {
+          gridItems[currentTrackIndex].classList.add('playing');
+        }
+      } else {
+        playIcon.textContent = 'play_arrow';
+        modalPlayIcon.textContent = 'play_arrow';
+        playerThumb.classList.remove('rotating');
+        modalCover.classList.remove('rotating');
+        visualizerWaves.classList.remove('active');
+        if (currentTrackIndex !== -1) {
+          gridItems[currentTrackIndex].classList.remove('playing');
+        }
+      }
+    }
+
+    function playNextTrack() {
+      if (playlist.length === 0) return;
+      if (isShuffle) {
+        let nextIdx;
+        do {
+          nextIdx = Math.floor(Math.random() * playlist.length);
+        } while (nextIdx === currentTrackIndex && playlist.length > 1);
+        loadAndPlayTrack(nextIdx);
+      } else {
+        let nextIdx = (currentTrackIndex + 1) % playlist.length;
+        loadAndPlayTrack(nextIdx);
+      }
+    }
+
+    function playPrevTrack() {
+      if (playlist.length === 0) return;
+      if (audio.currentTime > 3) {
+        audio.currentTime = 0;
+        return;
+      }
+      let prevIdx = (currentTrackIndex - 1 + playlist.length) % playlist.length;
+      loadAndPlayTrack(prevIdx);
+    }
+
+    function toggleShuffle() {
+      isShuffle = !isShuffle;
+      shuffleBtn.classList.toggle('active', isShuffle);
+      const modalShuffle = document.getElementById('modalShuffleIcon');
+      if (modalShuffle) modalShuffle.parentElement.classList.toggle('active', isShuffle);
+    }
+
+    function toggleRepeat() {
+      isRepeat = !isRepeat;
+      audio.loop = isRepeat;
+      repeatBtn.classList.toggle('active', isRepeat);
+      const modalRepeat = document.getElementById('modalRepeatIcon');
+      if (modalRepeat) modalRepeat.parentElement.classList.toggle('active', isRepeat);
+    }
+
+    // --- Time & Progress Tracking ---
+    audio.addEventListener('timeupdate', () => {
+      if (!isSeeking && audio.duration) {
+        const percent = (audio.currentTime / audio.duration) * 100;
+        seekSlider.value = percent;
+        progressFill.style.width = percent + '%';
+        currentTimeText.textContent = formatTime(audio.currentTime);
+
+        modalSeekSlider.value = percent;
+        modalProgressFill.style.width = percent + '%';
+        modalCurrentTime.textContent = formatTime(audio.currentTime);
+      }
+    });
+
+    audio.addEventListener('loadedmetadata', () => {
+      const dur = formatTime(audio.duration || 0);
+      durationTimeText.textContent = dur;
+      modalDurationTime.textContent = dur;
+    });
+
+    audio.addEventListener('ended', () => {
+      if (!isRepeat) {
+        playNextTrack();
+      }
+    });
+
+    audio.addEventListener('play', () => updatePlayStateUI());
+    audio.addEventListener('pause', () => updatePlayStateUI());
+
+    function formatTime(seconds) {
+      if (isNaN(seconds) || seconds === Infinity) return "0:00";
+      const min = Math.floor(seconds / 60);
+      const sec = Math.floor(seconds % 60);
+      return `${min}:${sec < 10 ? '0' : ''}${sec}`;
+    }
+
+    function onSeekChange() {
+      isSeeking = true;
+      const val = seekSlider.value;
+      progressFill.style.width = val + '%';
+      if (audio.duration) {
+        currentTimeText.textContent = formatTime((val / 100) * audio.duration);
+      }
+    }
+
+    function onSeekFinal() {
+      if (audio.duration) {
+        audio.currentTime = (seekSlider.value / 100) * audio.duration;
+      }
+      isSeeking = false;
+    }
+
+    function onModalSeekChange() {
+      isSeeking = true;
+      const val = modalSeekSlider.value;
+      modalProgressFill.style.width = val + '%';
+      if (audio.duration) {
+        modalCurrentTime.textContent = formatTime((val / 100) * audio.duration);
+      }
+    }
+
+    function onModalSeekFinal() {
+      if (audio.duration) {
+        audio.currentTime = (modalSeekSlider.value / 100) * audio.duration;
+      }
+      isSeeking = false;
+    }
+
+    // --- Volume Handling ---
+    function changeVolume(val) {
+      audio.volume = val;
+      if (val == 0) {
+        volumeIcon.textContent = 'volume_off';
+      } else if (val < 0.5) {
+        volumeIcon.textContent = 'volume_down';
+      } else {
+        volumeIcon.textContent = 'volume_up';
+      }
+    }
+
+    function toggleMute() {
+      if (audio.volume > 0) {
+        previousVolume = audio.volume;
+        audio.volume = 0;
+        volumeSlider.value = 0;
+        volumeIcon.textContent = 'volume_off';
+      } else {
+        audio.volume = previousVolume || 0.85;
+        volumeSlider.value = audio.volume;
+        volumeIcon.textContent = audio.volume < 0.5 ? 'volume_down' : 'volume_up';
+      }
+    }
+
+    // --- Modal Toggle ---
+    function toggleNowPlayingModal() {
+      if (currentTrackIndex === -1 && playlist.length > 0) {
+        loadAndPlayTrack(0);
+      }
+      nowPlayingModal.classList.toggle('open');
+    }
+
+    // --- Search Functionality ---
+    function toggleSearch() {
+      const bar = document.getElementById("searchBar");
+      bar.classList.toggle("show");
+      if (bar.classList.contains("show")) {
+        document.getElementById("searchInput").focus();
+      }
+    }
+
+    function filterSongsLive() {
+      const input = document.getElementById("searchInput").value.toLowerCase().trim();
+      playlist.forEach(song => {
+        if (song.title.toLowerCase().includes(input)) {
+          song.element.style.display = "block";
+        } else {
+          song.element.style.display = "none";
+        }
+      });
+    }
+
+    function performSearch() {
+      const input = document.getElementById("searchInput").value.toLowerCase().trim();
+      let found = false;
+
+      playlist.forEach(song => {
+        if (song.title.toLowerCase().includes(input)) {
+          song.element.style.display = "block";
+          if (!found) {
+            song.element.scrollIntoView({ behavior: "smooth", block: "center" });
+            song.element.style.outline = "2px solid #e62b2b";
+            setTimeout(() => song.element.style.outline = "none", 1600);
+            found = true;
+          }
+        } else {
+          song.element.style.display = "none";
+        }
+      });
+
+      if (!found && input !== "") {
+        alert("No tracks found matching: " + input);
+      }
+    }
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" && document.getElementById("searchBar").classList.contains("show")) {
+        performSearch();
+      }
+      if (e.key === "Escape" && nowPlayingModal.classList.contains("open")) {
+        toggleNowPlayingModal();
+      }
+      // Space to toggle play/pause when not typing in search
+      if (e.code === "Space" && document.activeElement.tagName !== 'INPUT') {
+        e.preventDefault();
+        togglePlayPause();
+      }
+    });
+  </script>
+
+</body>
+
+</html>
