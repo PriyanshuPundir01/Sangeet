@@ -58,7 +58,7 @@
 
 ### ◈ 1. Home — Landing Gateway
 <kbd>
-  <img src="Sangeet ui ss.jpeg" alt="Sangeet Home Page" width="90%" style="border-radius: 8px; border: 2px solid #00ff99; box-shadow: 0 0 30px rgba(0, 255, 153, 0.25);" />
+  <img src="screenshot/Sangeet ui ss.jpeg" alt="Sangeet Home Page" width="90%" style="border-radius: 8px; border: 2px solid #00ff99; box-shadow: 0 0 30px rgba(0, 255, 153, 0.25);" />
 </kbd>
 <br/>
 <sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 1.0:</b> Central landing gateway featuring hero section, artist showcases, and navigation to all platform modules.</sub>
@@ -67,7 +67,7 @@
 
 ### ◈ 2. Music Player — Streaming Hub
 <kbd>
-  <img src="Music ss.jpeg" alt="Sangeet Music Player" width="90%" style="border-radius: 8px; border: 2px solid #00d4ff; box-shadow: 0 0 30px rgba(0, 212, 255, 0.25);" />
+  <img src="screenshot/Music ss.jpeg" alt="Sangeet Music Player" width="90%" style="border-radius: 8px; border: 2px solid #00d4ff; box-shadow: 0 0 30px rgba(0, 212, 255, 0.25);" />
 </kbd>
 <br/>
 <sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 1.1:</b> Interactive album card grid with persistent floating audio bar, vinyl spin animation, and real-time seek/volume controls.</sub>
@@ -76,7 +76,7 @@
 
 ### ◈ 3. Now Playing — Fullscreen Modal
 <kbd>
-  <img src="song ss.png" alt="Sangeet Now Playing" width="90%" style="border-radius: 8px; border: 2px solid #00ff99; box-shadow: 0 0 30px rgba(0, 255, 153, 0.25);" />
+  <img src="screenshot/song ss.png" alt="Sangeet Now Playing" width="90%" style="border-radius: 8px; border: 2px solid #00ff99; box-shadow: 0 0 30px rgba(0, 255, 153, 0.25);" />
 </kbd>
 <br/>
 <sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 1.2:</b> Expandable Now Playing modal with high-res vinyl artwork, animated waveform visualizer, and large playback controls.</sub>
@@ -85,7 +85,7 @@
 
 ### ◈ 4. Video Gallery — YouTube Showcase
 <kbd>
-  <img src="Video ss.jpeg" alt="Sangeet Video Gallery" width="90%" style="border-radius: 8px; border: 2px solid #ff007f; box-shadow: 0 0 30px rgba(255, 0, 127, 0.25);" />
+  <img src="screenshot/Video ss.jpeg" alt="Sangeet Video Gallery" width="90%" style="border-radius: 8px; border: 2px solid #ff007f; box-shadow: 0 0 30px rgba(255, 0, 127, 0.25);" />
 </kbd>
 <br/>
 <sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 1.3:</b> Responsive 3-column video gallery with 20+ embedded Uttarakhandi music videos, hover animations, and dark card elevations.</sub>
