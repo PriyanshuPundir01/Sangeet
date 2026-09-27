@@ -42,7 +42,7 @@
 
 ```
   ┌─────────────────────────┐      ┌─────────────────────────┐      ┌─────────────────────────┐
-  │  💿 Album Track Grid    │ ──❯  │ 🎛️ Stateful Audio Queue │ ──❯  │ 🎧 Glassmorphic Player  │
+  │  💿 Album Track Grid    │ ──❯  │ 🎛️ Stateful Audio Queue │ ──❯ │ 🎧 Glassmorphic Player  │
   │     (35+ Audio Cards)   │      │   HTML5 Audio Engine    │      │    Sticky Bar & Modal   │
   └─────────────────────────┘      └─────────────────────────┘      └─────────────────────────┘
 ```
