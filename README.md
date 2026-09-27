@@ -94,7 +94,7 @@
 
 ### ◈ 5. Contact Portal — Connect & Locate
 <kbd>
-  <img src="contact us ss.jpeg" alt="Sangeet Contact Page" width="90%" style="border-radius: 8px; border: 2px solid #ffb703; box-shadow: 0 0 30px rgba(255, 183, 3, 0.25);" />
+  <img src="screenshot/contact us ss.jpeg" alt="Sangeet Contact Page" width="90%" style="border-radius: 8px; border: 2px solid #ffb703; box-shadow: 0 0 30px rgba(255, 183, 3, 0.25);" />
 </kbd>
 <br/>
 <sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 1.4:</b> Functional contact form powered by FormSubmit with integrated Google Maps location embed and office details.</sub>
