@@ -203,7 +203,7 @@ main {
 .album-card {
   position: relative;
   width: 100%;
-  padding-top: 100%; /* 1:1 Aspect Ratio */
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   background: #111;
 }
@@ -372,6 +372,7 @@ main {
   position: relative;
   width: 58px;
   height: 58px;
+  aspect-ratio: 1 / 1;
   border-radius: 10px;
   overflow: hidden;
   flex-shrink: 0;
@@ -599,7 +600,9 @@ main {
   top: 0;
   left: 0;
   width: 100vw;
+  width: 100dvw;
   height: 100vh;
+  height: 100dvh;
   z-index: 3000;
   display: flex;
   align-items: center;
@@ -632,6 +635,10 @@ main {
   z-index: 2;
   width: 90%;
   max-width: 480px;
+  max-height: 90vh;
+  max-height: 90dvh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
   background: rgba(20, 20, 24, 0.75);
   backdrop-filter: blur(28px);
   -webkit-backdrop-filter: blur(28px);
@@ -674,8 +681,9 @@ main {
 
 .modal-artwork-wrapper {
   position: relative;
-  width: 260px;
-  height: 260px;
+  width: min(260px, 60vw);
+  aspect-ratio: 1 / 1;
+  height: auto;
   margin-bottom: 24px;
   border-radius: 20px;
   overflow: hidden;
@@ -861,6 +869,24 @@ footer p a:hover {
     font-size: 17px;
   }
 
+  .search-group {
+    position: relative;
+  }
+
+  .search-bar {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 10px;
+    z-index: 1001;
+    background: #18181b;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.85);
+  }
+
+  .search-bar input {
+    width: 130px;
+  }
+
   .music-header-title h2 {
     font-size: 28px;
     letter-spacing: 2px;
@@ -878,7 +904,14 @@ footer p a:hover {
 
   .player-track-info {
     width: 130px;
+    min-width: 0;
+    flex-shrink: 1;
     gap: 10px;
+  }
+
+  .player-controls-container {
+    min-width: 0;
+    flex: 1;
   }
 
   .player-buttons {
@@ -891,13 +924,15 @@ footer p a:hover {
 
   .modal-overlay {
     max-height: 88vh;
+    max-height: 88dvh;
     padding: 20px 20px 28px;
     border-radius: 20px;
   }
 
   .modal-artwork-wrapper {
-    width: min(210px, 55vw);
-    height: min(210px, 55vw);
+    width: min(210px, 50vw);
+    aspect-ratio: 1 / 1;
+    height: auto;
     margin-bottom: 14px;
   }
 }
@@ -920,11 +955,14 @@ footer p a:hover {
   .track-thumb-wrapper {
     width: 44px;
     height: 44px;
+    aspect-ratio: 1 / 1;
     border-radius: 8px;
   }
 
   .player-track-info {
     width: 100px;
+    min-width: 0;
+    flex-shrink: 1;
     gap: 6px;
   }
 
