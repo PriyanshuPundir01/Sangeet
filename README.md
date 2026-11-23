@@ -201,10 +201,6 @@ SANGEET - main/
 ├── covers/                  # High-definition album covers & thumbnails
 │   ├── 1750809799905.jpg
 │   └── Cover of *.jpg
-├── fonts/                   # Local offline font assets (Dogjaw, Dirt, Distressed)
-│   ├── BlackOpsOne.ttf
-│   ├── RubikDirt.ttf
-│   └── RubikDistressed.ttf
 ├── screenshot/              # Interface HUD previews & screenshots
 │   ├── Sangeet ui ss.jpeg   # Home page preview
 │   ├── Music ss.jpeg        # Music streaming hub preview
@@ -220,7 +216,6 @@ SANGEET - main/
 ├── contact.html             # Contact portal & Google Maps integration
 ├── contact.css              # Contact form styles
 ├── vercel.json              # Vercel deployment & security headers configuration
-├── _headers                 # Cloudflare / Netlify security headers
 ├── .gitignore               # Ignored local & environment files
 └── README.md                # Platform documentation
 ```
