@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Contact Us</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="contact.css"/>
@@ -12,7 +14,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://db.onlinewebfonts.com/c/8c248c2863a9f324af358c003066ac26?family=Dogjaw+W01+Regular"
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rubik+Dirt&family=Rubik+Distressed&display=swap"
       rel="stylesheet"/>
 </head>
 <body>
@@ -62,16 +64,13 @@
         <div class="form-container">
             <h2>Send Us a Message</h2>
             <form action="https://formsubmit.co/priyanshupundir36@gmail.com" method="POST">
-                <!-- Disable Captcha (optional) -->
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
                 <input type="hidden" name="_captcha" value="false">
-                
-                <!-- Email Subject -->
                 <input type="hidden" name="_subject" value="New Contact Message from Sangeet!">
-
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="tel" name="phone" placeholder="Your Phone Number">
-                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="text" name="name" placeholder="Your Name" required maxlength="80" autocomplete="name">
+                <input type="email" name="email" placeholder="Your Email" required maxlength="100" autocomplete="email">
+                <input type="tel" name="phone" placeholder="Your Phone Number" maxlength="20" autocomplete="tel">
+                <textarea name="message" placeholder="Your Message" required maxlength="3000"></textarea>
                 <button type="submit">Submit</button>
             </form>
         </div>

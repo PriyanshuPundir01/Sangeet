@@ -4,12 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Music - Sangeet</title>
   <link rel="stylesheet" href="music.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&family=Montserrat:wght@400;600;700&display=swap"
     rel="stylesheet" />
-  <link href="https://db.onlinewebfonts.com/c/8c248c2863a9f324af358c003066ac26?family=Dogjaw+W01+Regular"
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Rubik+Dirt&family=Rubik+Distressed&display=swap"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -796,8 +798,8 @@
       audio.play().then(() => {
         isPlaying = true;
         updatePlayStateUI();
-      }).catch(err => {
-        console.warn("Autoplay notice:", err);
+      }).catch(() => {
+        // Autoplay prevented by browser policy
       });
     }
 

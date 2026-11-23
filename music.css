@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Black Ops One';
+  src: url('./fonts/BlackOpsOne.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik Distressed';
+  src: url('./fonts/RubikDistressed.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik Dirt';
+  src: url('./fonts/RubikDirt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +34,7 @@ html {
   background-attachment: fixed;
   scroll-behavior: smooth;
   color: white;
+  overflow-x: hidden;
 }
 
 /* Header & Nav */
@@ -48,7 +70,7 @@ html {
 
 .nav ul li a {
   text-transform: uppercase;
-  font-family: "Dogjaw W01 Regular", 'Urbanist', sans-serif;
+  font-family: 'Black Ops One', 'Rubik Distressed', sans-serif;
   font-size: 24px;
   letter-spacing: 2px;
   color: #ddd;
@@ -152,7 +174,7 @@ main {
 }
 
 .music-header-title h2 {
-  font-family: "Dogjaw W01 Regular", 'Urbanist', sans-serif;
+  font-family: 'Black Ops One', 'Rubik Distressed', sans-serif;
   font-size: 38px;
   letter-spacing: 3px;
   color: #fff;
@@ -837,18 +859,38 @@ footer p a:hover {
   }
 }
 
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+  .nav {
+    padding: 12px 6px;
+  }
+}
+
 @media (max-width: 600px) {
   .nav ul {
-    gap: 18px;
+    gap: 14px;
   }
   
   .nav ul li a {
-    font-size: 18px;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .nav ul li a.active {
+    font-size: 17px;
+  }
+
+  .music-header-title h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
   }
 
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
+    width: 94vw;
   }
 
   .player-extra-controls {
@@ -856,7 +898,8 @@ footer p a:hover {
   }
 
   .player-track-info {
-    width: 140px;
+    width: 130px;
+    gap: 10px;
   }
 
   .player-buttons {
@@ -865,6 +908,66 @@ footer p a:hover {
 
   #shuffleBtn, #repeatBtn {
     display: none;
+  }
+
+  .modal-overlay {
+    max-height: 88vh;
+    padding: 20px 20px 28px;
+    border-radius: 20px;
+  }
+
+  .modal-artwork-wrapper {
+    width: min(210px, 55vw);
+    height: min(210px, 55vw);
+    margin-bottom: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav ul {
+    gap: 10px;
+  }
+
+  .nav ul li a {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+
+  .player-content {
+    padding: 0 8px;
+    gap: 6px;
+  }
+
+  .track-thumb-wrapper {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+  }
+
+  .player-track-info {
+    width: 100px;
+    gap: 6px;
+  }
+
+  .track-title {
+    font-size: 13px;
+  }
+
+  .track-artist {
+    font-size: 11px;
+  }
+
+  .player-progress-bar .time-text {
+    display: none;
+  }
+
+  .btn-play {
+    width: 38px;
+    height: 38px;
+  }
+
+  .btn-play .material-icons {
+    font-size: 24px;
   }
 }
 

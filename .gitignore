@@ -1,0 +1,27 @@
+# Secrets and environment variables
+.env
+.env.*
+*.env
+*.key
+*.pem
+*.secret
+credentials*
+secrets*
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor & IDE configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build / node artifacts
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
