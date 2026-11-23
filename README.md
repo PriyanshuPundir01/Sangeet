@@ -58,46 +58,56 @@
 
 ### ◈ 1. Home — Landing Gateway
 <kbd>
-  <img src="screenshot/Sangeet ui ss.jpeg" alt="Sangeet Home Page" width="90%" style="border-radius: 8px; border: 2px solid #00ff99; box-shadow: 0 0 30px rgba(0, 255, 153, 0.25);" />
+  <a href="screenshot/Sangeet%20ui%20ss.jpeg">
+    <img src="screenshot/Sangeet%20ui%20ss.jpeg" alt="Sangeet Home Page" width="90%" style="border-radius: 8px; border: 2px solid #00ff99; box-shadow: 0 0 30px rgba(0, 255, 153, 0.25);" />
+  </a>
 </kbd>
 <br/>
-<sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 1.0:</b> Central landing gateway featuring hero section, artist showcases, and navigation to all platform modules.</sub>
+<sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 1.0:</b> Central landing gateway featuring animated background hero section, artist showcases, and navigation. <b>[<a href="screenshot/Sangeet%20ui%20ss.jpeg">View Full Screenshot</a>]</b></sub>
 
 <br/><br/>
 
 ### ◈ 2. Music Player — Streaming Hub
 <kbd>
-  <img src="screenshot/Music ss.jpeg" alt="Sangeet Music Player" width="90%" style="border-radius: 8px; border: 2px solid #00d4ff; box-shadow: 0 0 30px rgba(0, 212, 255, 0.25);" />
+  <a href="screenshot/Music%20ss.jpeg">
+    <img src="screenshot/Music%20ss.jpeg" alt="Sangeet Music Player" width="90%" style="border-radius: 8px; border: 2px solid #00d4ff; box-shadow: 0 0 30px rgba(0, 212, 255, 0.25);" />
+  </a>
 </kbd>
 <br/>
-<sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 1.1:</b> Interactive album card grid with persistent floating audio bar, vinyl spin animation, and real-time seek/volume controls.</sub>
+<sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 1.1:</b> Interactive album card grid with persistent floating audio bar, vinyl spin animation, and real-time seek/volume controls. <b>[<a href="screenshot/Music%20ss.jpeg">View Full Screenshot</a>]</b></sub>
 
 <br/><br/>
 
 ### ◈ 3. Now Playing — Fullscreen Modal
 <kbd>
-  <img src="screenshot/song ss.png" alt="Sangeet Now Playing" width="90%" style="border-radius: 8px; border: 2px solid #00ff99; box-shadow: 0 0 30px rgba(0, 255, 153, 0.25);" />
+  <a href="screenshot/song%20ss.png">
+    <img src="screenshot/song%20ss.png" alt="Sangeet Now Playing" width="90%" style="border-radius: 8px; border: 2px solid #00ff99; box-shadow: 0 0 30px rgba(0, 255, 153, 0.25);" />
+  </a>
 </kbd>
 <br/>
-<sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 1.2:</b> Expandable Now Playing modal with high-res vinyl artwork, animated waveform visualizer, and large playback controls.</sub>
+<sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 1.2:</b> Expandable Now Playing modal with high-res rotating vinyl artwork, animated waveform visualizer, and playback controls. <b>[<a href="screenshot/song%20ss.png">View Full Screenshot</a>]</b></sub>
 
 <br/><br/>
 
 ### ◈ 4. Video Gallery — YouTube Showcase
 <kbd>
-  <img src="screenshot/Video ss.jpeg" alt="Sangeet Video Gallery" width="90%" style="border-radius: 8px; border: 2px solid #ff007f; box-shadow: 0 0 30px rgba(255, 0, 127, 0.25);" />
+  <a href="screenshot/Video%20ss.jpeg">
+    <img src="screenshot/Video%20ss.jpeg" alt="Sangeet Video Gallery" width="90%" style="border-radius: 8px; border: 2px solid #ff007f; box-shadow: 0 0 30px rgba(255, 0, 127, 0.25);" />
+  </a>
 </kbd>
 <br/>
-<sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 1.3:</b> Responsive 3-column video gallery with 20+ embedded Uttarakhandi music videos, hover animations, and dark card elevations.</sub>
+<sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 1.3:</b> Responsive 3-column video gallery with embedded Uttarakhandi music videos, hover animations, and dark card elevations. <b>[<a href="screenshot/Video%20ss.jpeg">View Full Screenshot</a>]</b></sub>
 
 <br/><br/>
 
 ### ◈ 5. Contact Portal — Connect & Locate
 <kbd>
-  <img src="screenshot/contact us ss.jpeg" alt="Sangeet Contact Page" width="90%" style="border-radius: 8px; border: 2px solid #ffb703; box-shadow: 0 0 30px rgba(255, 183, 3, 0.25);" />
+  <a href="screenshot/contact%20us%20ss.jpeg">
+    <img src="screenshot/contact%20us%20ss.jpeg" alt="Sangeet Contact Page" width="90%" style="border-radius: 8px; border: 2px solid #ffb703; box-shadow: 0 0 30px rgba(255, 183, 3, 0.25);" />
+  </a>
 </kbd>
 <br/>
-<sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 1.4:</b> Functional contact form powered by FormSubmit with integrated Google Maps location embed and office details.</sub>
+<sub style="font-family: 'Bookman Old Style', 'URW Bookman', serif;"><b>◈ Figure 1.4:</b> Functional contact form with honeypot security, integrated Google Maps embed, and contact information. <b>[<a href="screenshot/contact%20us%20ss.jpeg">View Full Screenshot</a>]</b></sub>
 
 </div>
 
@@ -191,18 +201,27 @@ SANGEET - main/
 ├── covers/                  # High-definition album covers & thumbnails
 │   ├── 1750809799905.jpg
 │   └── Cover of *.jpg
-├── songs/                   # High-quality MP3 audio files
-│   ├── Aejadi Bhagyani.mp3
-│   ├── Chaitwali.mp3
-│   └── ... (35+ tracks)
+├── fonts/                   # Local offline font assets (Dogjaw, Dirt, Distressed)
+│   ├── BlackOpsOne.ttf
+│   ├── RubikDirt.ttf
+│   └── RubikDistressed.ttf
+├── screenshot/              # Interface HUD previews & screenshots
+│   ├── Sangeet ui ss.jpeg   # Home page preview
+│   ├── Music ss.jpeg        # Music streaming hub preview
+│   ├── song ss.png          # Now Playing modal preview
+│   ├── Video ss.jpeg        # Video gallery preview
+│   └── contact us ss.jpeg   # Contact portal preview
 ├── index.html               # Gateway & Home landing interface
 ├── style.css                # Home page styles & animations
-├── music.html               # Interactive music streaming hub
+├── music.html               # Interactive music streaming hub (Cloudinary CDN audio)
 ├── music.css                # Glassmorphic player & modal stylesheets
 ├── video.html               # YouTube video gallery interface
 ├── video.css                # Video gallery grid & card styles
 ├── contact.html             # Contact portal & Google Maps integration
 ├── contact.css              # Contact form styles
+├── vercel.json              # Vercel deployment & security headers configuration
+├── _headers                 # Cloudflare / Netlify security headers
+├── .gitignore               # Ignored local & environment files
 └── README.md                # Platform documentation
 ```
 
@@ -218,7 +237,7 @@ SANGEET - main/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/sangeet.git
+git clone https://github.com/PriyanshuPundir01/Sangeet.git
 
 # 2. Navigate to project root
 cd sangeet
